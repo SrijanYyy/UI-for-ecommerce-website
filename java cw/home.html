@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Petal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Strait&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <header>
+        
+            <nav>
+                <span><img src="images/download.png" alt="" srcset="" width="75px" height=""></span>
+                <ul>
+                    <a href="#" class="nav-link"><li>HOME</li></a>
+                    
+                    <a href="products.html" class="nav-link"><li>PRODUCTS</li></a>
+                    <a href="about us.html" class="nav-link"><li>ABOUT US</li></a>
+                   
+                </ul>
+                <div class="search-container">
+                    <input type="text" class="search-bar" id="searchInput" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class="ri-search-line"></i></button>
+                  </div>
+                  <div class="login-signup">
+                    <a href="login.html" class="button"><i class="ri-user-line"></i>Login</a>
+                    <a href="sign up.html" class="button"><i class="ri-logout-box-r-line"></i>Sign Up</a>
+                  </div>
+                  <div class="cart">
+                    <a href="cart.html" class="button"><i class="ri-shopping-cart-line"></i></a>`
+                  </div>
+            </nav>
+    </header>
+    <!-- navbar ends here -->
+    
+<!-- image slider is header -->
+<div class="slider">
+    <div class="slide">
+        <a href="link1.html" class="slide-link"></a>
+      <img src="images/banner-1.webp" alt="Slide 1">
+      <!-- <div class="slide-content">
+        <h1>Capture Your Every Moments</h1>
+        <p>This is a description of the amazing product.</p>
+        <button>Lets Explore</button>
+      </div> -->
+      <button class="nav prev" onclick="prevSlide()"><i class="ri-arrow-left-line"></i></button>
+      <button class="nav next" onclick="nextSlide()"><i class="ri-arrow-right-line"></i></button>
+    </div>
+    <div class="slide">
+        <a href="link1.html" class="slide-link"></a>
+      <img src="images/banner-2.jpg" alt="Slide 2">
+      <!-- <div class="slide-content">
+        <h1>Another Amazing Product</h1>
+        <p>This is a description of another amazing product.</p>
+        <button>Buy Now</button>
+      </div> -->
+      <button class="nav prev" onclick="prevSlide()"><i class="ri-arrow-left-line"></i></button>
+      <button class="nav next" onclick="nextSlide()"><i class="ri-arrow-right-line"></i></button>
+    </div>
+    <div class="slide">
+        <a href="link1.html" class="slide-link"></a>
+      <img src="images/banner-3.jpg" alt="Slide 3">
+      <!-- <div class="slide-content">
+        <h1>Awesome Product</h1>
+        <p>This is a description of the awesome product.</p>
+        <button>Buy Now</button>
+      </div> -->
+      <button class="nav prev" onclick="prevSlide()"><i class="ri-arrow-left-line"></i></button>
+      <button class="nav next" onclick="nextSlide()"><i class="ri-arrow-right-line"></i></button>
+    </div>
+
+    <div class="slide">
+        <a href="link1.html" class="slide-link"></a>
+      <img src="images/banner-4.webp" alt="Slide 4">
+      <!-- <div class="slide-content">
+        <h1>Exciting Product</h1>
+        <p>This is a description of the exciting product.</p>
+        <button>Buy Now</button>
+      </div> -->
+      <button class="nav prev" onclick="prevSlide()"><i class="ri-arrow-left-line"></i></button>
+      <button class="nav next" onclick="nextSlide()"><i class="ri-arrow-right-line"></i></button>
+    </div>
+  </div>
+  <script src="script.js"></script> 
+  <!-- image slider finishes here -->
+
+<!-- product section starts here -->
+<div class="product-section">
+    <div class="product-head">
+        <div class="product-head1">
+            <img src="images/free deliverly.png" width="80px" alt="" >
+            <a href=""><h2>Free Delivery</h2></a>
+        </div>
+
+        <div class="product-head1">
+            <img src="images/vintage.png" width="80px" alt="" >
+            <a href=""><h2 style="margin-left:0px ;">Vintage Collection</h2></a>
+        </div>
+
+        <div class="product-head1">
+            <img src="images/safe.png" width="77px" >
+            <a href=""><h2>100% Safe</h2></a>
+        </div>
+
+        <div class="product-head1">
+            <img src="images/7days.png" width="80px" >
+            <a href=""><h2>7 Days return</h2></a>
+        </div>
+
+        <div class="product-head1">
+            <img src="images/certified.png" width="80px" alt="" >
+            <a href=""><h2 style="margin-left:53px;">Certified</h2></a>
+        </div>
+
+        <div class="product-head1">
+            <img src="images/premium.png"  width="80px" alt="" >
+            <a href=""><h2>Premium Quality</h2></a>
+        </div>
+    </div>
+    <div class="flash-sale">
+      <h1>Flash Sale</h1>
+    </div>
+    <div class="on-sale">
+        <h1>On sale</h1>
+    <div class="time-left">
+        <h3>Ending on:&nbsp;&nbsp;</h3>
+     <div class="time-box" id="hours">24</div> 
+     <div class="time-box" id="minutes">00</div> 
+    <div class="time-box" id="seconds">00</div>
+    <a  class="button" href="products.html">Shop More</a>
+    </div>
+    </div>
+  </div>
+<script src="flash-sale.js"></script>
+<div class="products">
+<div class="product1">
+   <button>Sale</button>
+    <img src="images/onsale1.png" alt="">
+        <h3>Sony a7R</h3>
+        <div class="price-container">
+            <div class="price-half">
+                <div class="price-original">₨1,050.00</div>
+                <hr class="cut-line">
+            </div>
+            <div class="price-new">₨950.00</div>
+        </div>
+        <div class="product-button">
+        <a href="" class="button1">Buy Now</a>
+        <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+        </div>
+</div>
+<div class="product1">
+    <button>Sale</button>
+    <img src="images/onsale1.png" alt="">
+        <h3>Sony a7R</h3>
+        <div class="price-container">
+            <div class="price-half">
+                <div class="price-original">₨1,050.00</div>
+                <hr class="cut-line">
+            </div>
+            <div class="price-new">₨950.00</div>
+        </div>
+        <div class="product-button">
+        <a href="" class="button1">Buy Now</a>
+        <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+        </div>
+</div>
+<div class="product1">
+    <button>Sale</button>
+    <img src="images/onsale1.png" alt="">
+        <h3>Sony a7R</h3>
+        <div class="price-container">
+            <div class="price-half">
+                <div class="price-original">₨1,050.00</div>
+                <hr class="cut-line">
+            </div>
+            <div class="price-new">₨950.00</div>
+        </div>
+        <div class="product-button">
+        <a href="" class="button1">Buy Now</a>
+        <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+        </div>
+</div>
+<div class="product1">
+    <button>Sale</button>
+    <img src="images/onsale1.png" alt="">
+        <h3>Sony a7R</h3>
+        <div class="price-container">
+            <div class="price-half">
+                <div class="price-original">₨1,050.00</div>
+                <hr class="cut-line">
+            </div>
+            <div class="price-new">₨950.00</div>
+        </div>
+        <div class="product-button">
+        <a href="" class="button1">Buy Now</a>
+        <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+        </div>
+</div>
+</div>
+
+<div class="featuredproduct">
+    <div class="featured">
+        <h1>Featured Product</h1>
+    </div>
+    <div class="products">
+        <div class="product1">
+           <!-- <button>Sale</button> -->
+            <img src="images/onsale1.png" alt="">
+                <h3>Sony a7R</h3>
+                <div class="price-container">
+                    <!-- <div class="price-half">
+                        <div class="price-original">₨1,050.00</div>
+                        <hr class="cut-line">
+                    </div> -->
+                    <div class="price-new" style="margin-left: 100px;">₨ 950.00</div>
+                </div>
+                <div class="product-button">
+                <a href="" class="button1">Buy Now</a>
+                <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+                </div>
+        </div>
+        <div class="product1">
+            <!-- <button>Sale</button> -->
+            <img src="images/onsale1.png" alt="">
+                <h3>Sony a7R</h3>
+                <div class="price-container">
+                    <!-- <div class="price-half">
+                        <div class="price-original">₨1,050.00</div>
+                        <hr class="cut-line">
+                    </div> -->
+                    <div class="price-new" style="margin-left: 100px;">₨ 950.00</div>
+                </div>
+                <div class="product-button">
+                <a href="" class="button1">Buy Now</a>
+                <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+                </div>
+        </div>
+        <div class="product1">
+            <!-- <button>Sale</button> -->
+            <img src="images/onsale1.png" alt="">
+                <h3>Sony a7R</h3>
+                <div class="price-container">
+                    <!-- <div class="price-half">
+                        <div class="price-original">₨1,050.00</div>
+                        <hr class="cut-line">
+                    </div> -->
+                    <div class="price-new" style="margin-left: 100px;">₨ 950.00</div>
+                </div>
+                <div class="product-button">
+                <a href="" class="button1">Buy Now</a>
+                <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+                </div>
+        </div>
+        <div class="product1">
+            <!-- <button>Sale</button> -->
+            <img src="images/onsale1.png" alt="">
+                <h3>Sony a7R</h3>
+                <div class="price-container">
+                    <!-- <div class="price-half">
+                        <div class="price-original">₨1,050.00</div>
+                        <hr class="cut-line">
+                    </div> -->
+                    <div class="price-new" style="margin-left: 100px;">₨ 950.00</div>
+                </div>
+                <div class="product-button">
+                <a href="" class="button1">Buy Now</a>
+                <a href="" class="button2"><i class="ri-shopping-cart-line"></i> </a>
+                </div>
+        </div>
+        </div>
+</div>
+
+    <!-- product section ends here -->
+    <!-- footer section starts here -->
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>company</h4>
+             <ul>
+               <li><a href="#">about us</a></li>
+               <li><a href="#">our services</a></li>
+               <li><a href="#">privacy policy</a></li>
+               <li><a href="#">affiliate program</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>get help</h4>
+             <ul>
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">shipping</a></li>
+               <li><a href="#">returns</a></li>
+               <li><a href="#">order status</a></li>
+               <li><a href="#">payment options</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>online shop</h4>
+             <ul>
+               <li><a href="#">watch</a></li>
+               <li><a href="#">bag</a></li>
+               <li><a href="#">shoes</a></li>
+               <li><a href="#">dress</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
+     </body>
+     </html>

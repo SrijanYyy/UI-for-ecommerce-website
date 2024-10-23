@@ -1,0 +1,456 @@
+
+  *{
+    /* width: 100vw; */
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color:#fafafa;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav {
+    display: flex;
+    margin-bottom:-55px;
+    /* background-color: ; */
+}
+
+nav span {
+    margin-left: -125px;
+    margin-bottom: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+ul a {
+    text-decoration: none;
+    position: relative; /* Add relative positioning */
+}
+
+ul a::after {
+    content: '';
+    position: absolute;
+    /* bottom: ; Adjust the distance of the line from the text */
+    left: 0;
+    width: 0; /* Set initial width to 0 */
+    height: 4px; /* Adjust the thickness of the line */
+    background-color:rgb(0, 0, 0); /* Change the color of the line */
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+ul a:hover::after {
+    width: 100%; /* Expand the line to 100% width */
+    animation: lineAnimation 0.5s forwards; /* Add animation effect */
+}
+
+@keyframes lineAnimation {
+    from {
+        width: 0; /* Start with 0 width */
+    }
+    to {
+        width: 100%; /* Expand to 100% width */
+    }
+}
+
+ul li {
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 450;
+}
+.search-container {
+    margin-top: 11px;
+    position: relative;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.search-bar {
+    width:400px;
+    padding: 7px 90px; /* Adjust padding to accommodate the button */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #000000;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    left: 395px;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #000000;
+    font-size: 28px;
+    
+}
+
+.search-btn:hover i {
+    color: #000000;
+}
+
+
+.headericon li{
+    font-size: large;
+}
+.login-signup{
+    margin-left: 300px;
+    margin-top: 7px;
+   }
+ 
+   .login-signup .button{
+     position: relative;
+         gap:-20px;
+         font-size: 15px;
+         display: inline-block;
+         padding: 10px;
+         background-color: #fafafa;
+         color: #000000;
+         text-decoration: none;
+         border-radius: 5px;
+   }
+         .login-signup .button i{
+             color: rgb(0, 0, 0);
+             font-size: medium;
+         }
+ 
+         .login-signup .button::after {
+             content: '';
+             position: absolute;
+             bottom:1px; 
+             left: 0;
+             width: 0; /* Set initial width to 0 */
+             height: 4px; /* Adjust the thickness of the line */
+             background-color:rgb(0, 0, 0); /* Change the color of the line */
+             transition: width 0.3s ease; /* Add transition effect */
+         } 
+         .login-signup .button:hover::after {
+             width: 100%; /* Expand the line to 100% width */
+             animation: lineAnimation 0.5s forwards; /* Add animation effect */
+         }  
+         
+         .cart{
+             position: absolute;
+             right: 100px;
+             margin-top: 8px;
+            
+            
+         }
+         .cart .button{
+             position: absolute;
+           font-size: 25px;
+           color: black;
+         }
+.select-all{
+    background-color: #fafafa;
+    width:600px;
+    height: 50px;
+    position: absolute;
+    top:115px;
+    left: 201px;
+}
+.select-all input[type="checkbox"] {
+    position: relative;
+    left:12px ;
+    top: 15px;
+    width: 3em;
+    height: 2rem;   
+}
+.product-list label {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 15px;
+ 
+}
+.delete1{
+    position: relative;
+    left: 360px;
+    top: 10px;
+    cursor: pointer;
+}
+.checkout{
+    background-color: #fafafa;
+    left:852px;
+    top: 115px;
+    position: absolute;
+    width: 400px;
+    height: 220px;
+}
+.checkout h1{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-weight: 400;
+}
+.checkout  span{
+    position: relative;
+    left: 200px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 17px;
+}
+.checkout p{
+    position: relative;
+    top: 15px;
+    left: 23px;
+    color: rgb(106, 104, 104);
+    font-size: 13px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width as needed */
+}
+.text-field {
+    position: relative;
+    top: 29px;
+    left: 23px;
+    flex: 1;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.apply-button {
+    position: relative;
+    top: 29px;
+    left: 32px;
+    padding: 10px 45px;
+    background-color: #449dfc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8px; /* Adjust spacing between text field and button */
+}
+.apply-button:hover {
+    background-color: #0056b3;
+}
+.checkout .lasttotal{
+    position: relative;
+    top: 40px;
+    left: 23px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+.lasttotal  span{
+    position: relative;
+    left: 286px;
+    font-weight: 400;
+    color: orange;
+    font-size: 19px;
+}
+.checkout .btn{
+    position: relative;
+    top: 70px;
+    left: 23px;
+    border-radius: 4px;
+    padding: 8px 99px;
+    background-color: orange;
+    cursor: pointer
+}
+.checkout .btn:hover{
+    background-color: #f89602;
+}
+.product {
+    background-color: #fafafa;
+    position: absolute;
+    top: 205px;
+    left: 201px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    width: 600px;
+    height: 150px;
+}
+.product1 {
+    background-color: #fafafa;
+    position: absolute;
+    top: 354px;
+    left: 201px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    width: 600px;
+    height: 150px;
+}
+.product2 {
+    background-color: #fafafa;
+    position: absolute;
+    top: 499px;
+    left: 201px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    width: 600px;
+    height: 150px;
+}
+
+.product img,.product1 img,.product2 img {
+    position: relative;
+    max-width: 100px;
+    margin-right: 40px;
+    left: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+.product-details h1 {
+    font-size: 15px;
+}
+.brand {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 18px;
+    color: red;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.quantity {
+    position: relative;
+    top:12px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity input[type="text"] {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #e8e4e4;
+    margin: 0 10px;
+}
+.delete{
+    margin-left: 77px;
+}
+.footer{
+    position: absolute;
+    top: 687px;
+    background-color: #24262b;
+      padding: 70px 0;
+}
+.container1{
+    max-width: 100%;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col ul{
+    list-style: none;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }

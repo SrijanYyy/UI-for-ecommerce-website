@@ -1,0 +1,351 @@
+:root {
+    --font-family:"Poppins", sans-serif;
+
+  }
+
+  *{
+    /* width: 100vw; */
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color:#fafafa;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav {
+    display: flex;
+    margin-bottom:-55px;
+    /* background-color: ; */
+}
+
+span {
+    margin-left: -125px;
+    margin-bottom: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+ul a {
+    text-decoration: none;
+    position: relative; /* Add relative positioning */
+}
+
+ul a::after {
+    content: '';
+    position: absolute;
+    /* bottom: ; Adjust the distance of the line from the text */
+    left: 0;
+    width: 0; /* Set initial width to 0 */
+    height: 4px; /* Adjust the thickness of the line */
+    background-color:rgb(0, 0, 0); /* Change the color of the line */
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+ul a:hover::after {
+    width: 100%; /* Expand the line to 100% width */
+    animation: lineAnimation 0.5s forwards; /* Add animation effect */
+}
+
+@keyframes lineAnimation {
+    from {
+        width: 0; /* Start with 0 width */
+    }
+    to {
+        width: 100%; /* Expand to 100% width */
+    }
+}
+
+ul li {
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 450;
+}
+.search-container {
+    margin-top: 11px;
+    position: relative;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.search-bar {
+    width:400px;
+    padding: 7px 90px; /* Adjust padding to accommodate the button */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #000000;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    left: 395px;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #000000;
+    font-size: 28px;
+    
+}
+
+.search-btn:hover i {
+    color: #000000;
+}
+
+
+.headericon li{
+    font-size: large;
+}
+.login-signup{
+    margin-left: 300px;
+    margin-top: 7px;
+   }
+ 
+   .login-signup .button{
+     position: relative;
+         gap:-20px;
+         font-size: 15px;
+         display: inline-block;
+         padding: 10px;
+         background-color: #fafafa;
+         color: #000000;
+         text-decoration: none;
+         border-radius: 5px;
+   }
+         .login-signup .button i{
+             color: rgb(0, 0, 0);
+             font-size: medium;
+         }
+ 
+         .login-signup .button::after {
+             content: '';
+             position: absolute;
+             bottom:1px; 
+             left: 0;
+             width: 0; /* Set initial width to 0 */
+             height: 4px; /* Adjust the thickness of the line */
+             background-color:rgb(0, 0, 0); /* Change the color of the line */
+             transition: width 0.3s ease; /* Add transition effect */
+         } 
+         .login-signup .button:hover::after {
+             width: 100%; /* Expand the line to 100% width */
+             animation: lineAnimation 0.5s forwards; /* Add animation effect */
+         }  
+         
+         .cart{
+             position: absolute;
+             right: 100px;
+             margin-top: 8px;
+            
+            
+         }
+         .cart .button{
+             position: absolute;
+           font-size: 25px;
+           color: black;
+         }
+
+         .part1{
+            margin-top: 100px;
+            margin-left: 70px;
+            position: absolute;
+         }
+         .part1 img:first-of-type{
+            height: 500px;
+            width: 700px;
+            object-fit: contain;
+         }
+         .part1 p{
+            position: relative;
+            right: 20px;
+            left: 797px;
+            bottom: 475px;
+            font-size: large;
+            color: gray;
+         }
+         .part1 h2{
+            position: relative;
+            right: 30px;
+            left: 797px;
+            bottom: 460px;
+            font-size: large;
+         }
+
+         .part1 h3{
+            position: relative;
+            right: 30px;
+            left: 797px;
+            bottom: 450px;
+            font-size: large;
+            color: gold;
+         }
+         .part1 h3 span{
+            position: relative;
+            right: 30px;
+            color: black;
+            margin-left: 40px;
+            font-weight: 400;
+         }
+         .part1 h4{
+            position: relative;
+            right: 30px;
+            left: 797px;
+            bottom: 435px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+         }
+
+         .part1 p1{
+            position: relative;
+            right: 30px;
+            left: 797px;
+            bottom: 430px;
+            font-size: 15px;
+            color:green;
+            font-weight: 600;
+         }
+         .part1 p2{
+            position: relative;
+            left: 389px;
+            bottom: 400px;
+            font-size: 15px;
+            color:gray;
+            font-weight: 600;
+         }
+         .part1 p2 span{
+           margin-left: 1px;
+           color: black;
+         }
+         .part1 p3{
+            position: relative;
+            left: 194px;
+            bottom: 360px;
+            font-size: 15px;
+            color:rgb(255, 0, 0);
+            font-weight: 500;
+         }
+         label{
+            font-size: 20px;
+            position: relative;
+            left: -26px;
+            bottom: 290px;
+         }
+
+         select {
+            position: relative;
+            left: -26px;
+            bottom: 290px;
+            padding: 10px 14px; /* Add padding for better appearance */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 8px; /* Apply border radius */
+            font-size: 16px; /* Increase font size */
+          }
+          
+          /* Style for the submit button */
+          input[type="submit"] {
+            position: relative;
+            left: -26px;
+            bottom: 290px;
+            padding: 10px 30px; /* Add padding */
+            border: 1px solid #ffb100; /* Add border */
+            border-radius: 8px; /* Apply border radius */
+            font-size: 16px; /* Increase font size */
+            cursor: pointer; /* Show pointer cursor on hover */
+            background-color: #ffb300c0;
+          }
+          .part1 p4{
+            position: relative;
+            left: -359px;
+            bottom: 220px;
+            font-size: 23px;
+            font-weight: 500;
+          }
+          .part1 p4::before{
+            position: absolute;
+            content: '';
+            background-color: #e91e63;
+            height: 3px;
+            box-sizing: border-box;
+            bottom: -7px;
+            left:0;
+            width: 200px;
+          }
+          .desscr{
+            max-width: 650px;
+          }
+          .part1 p5{
+            position: relative;
+            left: 798px;
+            bottom: 233px;
+            font-size: 13px;
+            color: #464646;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 1.5;
+            white-space: pre-line;
+            
+          }
+
+         
+        .center-text{
+            position: absolute;
+            top: 720px;
+            left:40px;
+            }
+        .center-text h1{
+            position: relative;
+            font-weight: 550;
+            color: #464646;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .center-text h1 i{
+            color: gold;
+            font-size: 40px;
+           
+        }
+
+
+

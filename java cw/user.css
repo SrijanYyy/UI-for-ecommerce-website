@@ -1,0 +1,305 @@
+:root {
+    --font-family:"Poppins", sans-serif;
+
+  }
+
+  *{
+    /* width: 100vw; */
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color:#fafafa;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav {
+    display: flex;
+    margin-bottom:-55px;
+    /* background-color: ; */
+}
+
+span {
+    margin-left: -125px;
+    margin-bottom: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+ul a {
+    text-decoration: none;
+    position: relative; /* Add relative positioning */
+}
+
+ul a::after {
+    content: '';
+    position: absolute;
+    /* bottom: ; Adjust the distance of the line from the text */
+    left: 0;
+    width: 0; /* Set initial width to 0 */
+    height: 4px; /* Adjust the thickness of the line */
+    background-color:rgb(0, 0, 0); /* Change the color of the line */
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+ul a:hover::after {
+    width: 100%; /* Expand the line to 100% width */
+    animation: lineAnimation 0.5s forwards; /* Add animation effect */
+}
+
+@keyframes lineAnimation {
+    0% {
+        width: 0; /* Start with 0 width */
+    }
+    100% {
+        width: 100%; /* Expand to 100% width */
+    }
+    0% {
+        width: 0; /* Start with 0 width */
+    }
+}
+
+ul li {
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 450;
+}
+.search-container {
+    margin-top: 11px;
+    position: relative;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.search-bar {
+    width:400px;
+    padding: 7px 90px; /* Adjust padding to accommodate the button */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #000000;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    left: 398px;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #000000;
+    font-size: 28px;
+    
+}
+
+.search-btn:hover i {
+    color: #000000;
+}
+
+
+.headericon li{
+    font-size: large;
+}
+    
+      .login-signup{
+       margin-left: 300px;
+       margin-top: 7px;
+      }
+    
+      .login-signup .button{
+        position: relative;
+            gap:-20px;
+            font-size: 15px;
+            display: inline-block;
+            padding: 10px;
+            background-color: #fafafa;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+      }
+            .login-signup .button i{
+                color: rgb(0, 0, 0);
+                font-size: medium;
+            }
+    
+            .login-signup .button::after {
+                content: '';
+                position: absolute;
+                bottom:1px; 
+                left: 0;
+                width: 0; /* Set initial width to 0 */
+                height: 4px; /* Adjust the thickness of the line */
+                background-color:rgb(0, 0, 0); /* Change the color of the line */
+                transition: width 0.3s ease; /* Add transition effect */
+            } 
+            .login-signup .button:hover::after {
+                width: 100%; /* Expand the line to 100% width */
+                animation: lineAnimation 0.5s forwards; /* Add animation effect */
+            }  
+            
+            .cart{
+                position: absolute;
+                right: 100px;
+                margin-top: 8px;
+               
+               
+            }
+            .cart .button{
+                position: absolute;
+              font-size: 25px;
+              color: black;
+            }
+           
+/* navbar stops here */
+.userprofile{
+    background-color: #fafafa;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    margin-top: 110px;
+    height: 60vh;
+}
+.userprofile h3{
+    position: relative;
+    top: 20px;
+    left:10px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.userprofile img{
+    position: relative;
+    top: 30px;
+    left: 100px;
+    width:200px;
+    height:200px;
+  
+}
+.userprofile h2{
+    position: relative;
+    top: 35px;
+    left: 140px;
+    font-weight: 500;
+}
+.userprofile h1{
+    position: relative;
+    bottom: 197px;
+    left: 320px;
+    font-size: 30px;
+    font-weight: 500;
+    color:orange;
+}
+.information, .information1{
+    display: flex;
+    gap: 40px;
+}
+.information1{
+    position: relative;
+    top: 40px;
+}
+
+.names{
+    position: relative;
+    bottom: 200px;
+    left: 312px;
+}
+.names h3{
+    font-size: 20px;
+}
+.names h4{
+    position: relative;
+    top: 30px;
+    left: 12px;
+    font-size: 15px;
+    color: cadetblue;
+}
+.button a{
+    list-style: none;
+    color: black;
+    font-size: 15px;
+}
+.edit{
+    position: relative;
+    bottom: 100px;
+    padding: 8px;
+    left: 319px;
+    background-color: rgba(128, 128, 128, 0.499);
+    border-radius: 4px;
+}
+.orderhead{
+    position: absolute;
+    top:570px;
+    width: 80%;
+    left: 10%;
+    height: 40px;
+    background-color: #fafafa;
+}
+.orderhead h1{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+table{
+    position: absolute;
+    top: 620px;
+    border-collapse: collapse;
+    width: 80%;
+    left: 10%;
+}
+th{
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: 500;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  } 
